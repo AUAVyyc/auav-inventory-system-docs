@@ -1,0 +1,1791 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Inventory_System/INVENTORY_SYSTEM/">
+      
+      
+        <link rel="next" href="../STOCKTAKING_WORKFLOW/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Stocktaking System Documentation - AUAV Inventory System Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#stocktaking-system-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AUAV Inventory System Docs" class="md-header__button md-logo" aria-label="AUAV Inventory System Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AUAV Inventory System Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Stocktaking System Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Inventory_System/INVENTORY_SYSTEM/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Inventory System
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Stocktaking System
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Timesheet_and_Expense_Sheet_System/000_TIMESHEET_EXPENSE_SHEET_SYSTEM/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Timesheet and Expense Sheet System
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AUAV Inventory System Docs" class="md-nav__button md-logo" aria-label="AUAV Inventory System Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    AUAV Inventory System Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inventory System
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Inventory System
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Inventory_System/INVENTORY_SYSTEM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inventory System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Stocktaking System
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Stocktaking System
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Stocktaking System Documentation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stocktaking System Documentation
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#persistent-state-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Persistent State Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-wide-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛡️ System-wide Protection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrative-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      👥 Administrative Control
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Schema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-administrators" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Administrators
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="For Administrators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-stocktaking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting Stocktaking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ending-stocktaking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ending Stocktaking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-staff-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Staff Users
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="For Staff Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#during-normal-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      During Normal Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#during-stocktaking" class="md-nav__link">
+    <span class="md-ellipsis">
+      During Stocktaking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Messages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Implementation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-configuration-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Configuration Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protected-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protected APIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stocktaking-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stocktaking Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Considerations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Migration Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Migration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Queries
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-enhancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Enhancements
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../STOCKTAKING_WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stocktaking Workflow - Admin &amp; Warehouse Separation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Timesheet and Expense Sheet System
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Timesheet and Expense Sheet System
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Timesheet_and_Expense_Sheet_System/000_TIMESHEET_EXPENSE_SHEET_SYSTEM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Timesheet and Expense Sheet System Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Timesheet_and_Expense_Sheet_System/100_USER_GETTING_STARTED/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started for Users
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Timesheet_and_Expense_Sheet_System/200_ADMIN_GETTING_STARTED/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started for Administrators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#persistent-state-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Persistent State Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-wide-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛡️ System-wide Protection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrative-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      👥 Administrative Control
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Schema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-administrators" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Administrators
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="For Administrators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-stocktaking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting Stocktaking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring Status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ending-stocktaking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ending Stocktaking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-staff-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Staff Users
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="For Staff Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#during-normal-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      During Normal Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#during-stocktaking" class="md-nav__link">
+    <span class="md-ellipsis">
+      During Stocktaking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Messages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Implementation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-configuration-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Configuration Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protected-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protected APIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stocktaking-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stocktaking Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Considerations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Migration Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Migration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Queries
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-enhancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Enhancements
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="stocktaking-system-documentation">Stocktaking System Documentation</h1>
+<h2 id="overview">Overview</h2>
+<p>The Stocktaking System provides persistent global state management to control inventory operations during stocktaking periods. When stocktaking mode is active, all inventory modifications (inbound/outbound/update operations) are disabled system-wide to ensure data integrity during stock counting.</p>
+<h2 id="key-features">Key Features</h2>
+<h3 id="persistent-state-management">🔒 <strong>Persistent State Management</strong></h3>
+<ul>
+<li>Configuration stored in database (<code>system_config</code> table)</li>
+<li>State survives server restarts</li>
+<li>Atomic configuration updates</li>
+</ul>
+<h3 id="system-wide-protection">🛡️ <strong>System-wide Protection</strong></h3>
+<ul>
+<li>Blocks all inventory log operations during stocktaking</li>
+<li>Prevents inventory updates during counting</li>
+<li>API-level enforcement with clear error messages</li>
+</ul>
+<h3 id="administrative-control">👥 <strong>Administrative Control</strong></h3>
+<ul>
+<li>Only Admin users can start/end stocktaking</li>
+<li>Full audit trail with timestamps and user tracking</li>
+<li>Real-time status monitoring</li>
+</ul>
+<h2 id="architecture">Architecture</h2>
+<h3 id="database-schema">Database Schema</h3>
+<pre><code class="language-sql">CREATE TABLE &quot;system_config&quot; (
+    &quot;config_key&quot; system_config_key PRIMARY KEY,
+    &quot;config_value&quot; text NOT NULL,
+    &quot;updated_at&quot; timestamp DEFAULT now() NOT NULL,
+    &quot;updated_by&quot; integer REFERENCES &quot;user&quot;(&quot;id&quot;)
+);
+</code></pre>
+<h3 id="configuration-keys">Configuration Keys</h3>
+<ul>
+<li><code>stocktaking_mode</code>: 'true' or 'false'</li>
+<li><code>stocktaking_start_time</code>: ISO timestamp</li>
+<li><code>stocktaking_started_by</code>: User ID</li>
+<li><code>maintenance_mode</code>: Reserved for future use</li>
+</ul>
+<h3 id="api-endpoints">API Endpoints</h3>
+<ul>
+<li><code>GET /api/system/stocktaking/status</code> - Get current status</li>
+<li><code>POST /api/system/stocktaking/start</code> - Start stocktaking (Admin only)</li>
+<li><code>POST /api/system/stocktaking/end</code> - End stocktaking (Admin only)</li>
+</ul>
+<h2 id="usage-guide">Usage Guide</h2>
+<h3 id="for-administrators">For Administrators</h3>
+<h4 id="starting-stocktaking">Starting Stocktaking</h4>
+<ol>
+<li>Navigate to Dashboard → Admin Portal</li>
+<li>Find the "Stocktaking Control" panel</li>
+<li>Click "Start Stocktaking"</li>
+<li>Confirm in the modal dialog</li>
+</ol>
+<p><strong>What happens:</strong>
+- All inventory operations are immediately blocked
+- Current timestamp and user are recorded
+- Status becomes ACTIVE with red badge</p>
+<h4 id="monitoring-status">Monitoring Status</h4>
+<p>The Stocktaking Control panel shows:
+- Current status (ACTIVE/INACTIVE)
+- Start time and initiating user
+- Warning about disabled operations
+- Real-time status updates</p>
+<h4 id="ending-stocktaking">Ending Stocktaking</h4>
+<ol>
+<li>Click "End Stocktaking" button</li>
+<li>Confirm in the modal dialog</li>
+</ol>
+<p><strong>What happens:</strong>
+- Inventory operations are re-enabled
+- Configuration is cleared
+- Status becomes INACTIVE with green badge</p>
+<h3 id="for-staff-users">For Staff Users</h3>
+<h4 id="during-normal-operations">During Normal Operations</h4>
+<ul>
+<li>All inventory functions work normally</li>
+<li>Inbound/outbound logging available</li>
+<li>Inventory updates permitted</li>
+</ul>
+<h4 id="during-stocktaking">During Stocktaking</h4>
+<ul>
+<li><strong>Blocked Operations:</strong></li>
+<li>Inventory log entries (<code>/api/inventory/log/add</code>)</li>
+<li>Inventory updates (<code>/api/inventory/item</code>) (PATCH)</li>
+<li>
+<p>Any other inventory modifications</p>
+</li>
+<li>
+<p><strong>Available Operations:</strong></p>
+</li>
+<li>View inventory (read-only)</li>
+<li>Search items</li>
+<li>View reports</li>
+<li>Non-inventory functions</li>
+</ul>
+<h4 id="error-messages">Error Messages</h4>
+<p>When attempting blocked operations:</p>
+<pre><code>&quot;Inventory log operations is not allowed during stocktaking. 
+Please complete stocktaking first.&quot;
+</code></pre>
+<h2 id="technical-implementation">Technical Implementation</h2>
+<h3 id="system-configuration-service">System Configuration Service</h3>
+<p><strong>File:</strong> <code>src/lib/server/system-config.ts</code></p>
+<p>Key functions:
+- <code>isStocktakingActive()</code> - Check current status
+- <code>startStocktaking(userId)</code> - Begin stocktaking mode
+- <code>endStocktaking(userId)</code> - End stocktaking mode
+- <code>ensureStocktakingNotActive(operation)</code> - Middleware check</p>
+<h3 id="protected-apis">Protected APIs</h3>
+<p>APIs with stocktaking protection:
+- Inventory log operations
+- Inventory updates
+- Future: Order processing, stock adjustments</p>
+<p>Protection pattern:</p>
+<pre><code class="language-typescript">await ensureStocktakingNotActive('Operation name');
+</code></pre>
+<h3 id="frontend-components">Frontend Components</h3>
+<ul>
+<li><code>StocktakingControl.svelte</code> - Admin control panel</li>
+<li>Real-time status updates</li>
+<li>Confirmation modals for safety</li>
+</ul>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="stocktaking-workflow">Stocktaking Workflow</h3>
+<ol>
+<li><strong>Preparation Phase</strong></li>
+<li>Notify all staff of upcoming stocktaking</li>
+<li>Complete pending inventory transactions</li>
+<li>
+<p>Generate pre-stocktaking reports</p>
+</li>
+<li>
+<p><strong>Stocktaking Phase</strong></p>
+</li>
+<li>Admin starts stocktaking mode</li>
+<li>Physical counting begins</li>
+<li>All inventory changes blocked</li>
+<li>
+<p>Count discrepancies recorded separately</p>
+</li>
+<li>
+<p><strong>Completion Phase</strong></p>
+</li>
+<li>Physical count verified</li>
+<li>Adjustments prepared (offline)</li>
+<li>Admin ends stocktaking mode</li>
+<li>Adjustments applied to system</li>
+</ol>
+<h3 id="security-considerations">Security Considerations</h3>
+<ul>
+<li>Only Admin role can control stocktaking</li>
+<li>All configuration changes are audited</li>
+<li>Database-level persistence prevents bypassing</li>
+<li>Clear error messages prevent confusion</li>
+</ul>
+<h3 id="error-handling">Error Handling</h3>
+<ul>
+<li>Graceful degradation when database unavailable</li>
+<li>Clear user feedback for blocked operations</li>
+<li>Automatic status refresh in admin panel</li>
+<li>Comprehensive logging for troubleshooting</li>
+</ul>
+<h2 id="migration-guide">Migration Guide</h2>
+<h3 id="database-migration">Database Migration</h3>
+<p>Run the migration script:</p>
+<pre><code class="language-bash"># Apply the migration
+npm run db:migrate
+</code></pre>
+<h3 id="required-files">Required Files</h3>
+<ul>
+<li><code>src/lib/shared/system-config.ts</code> - Type definitions</li>
+<li><code>src/lib/server/system-config.ts</code> - Core service</li>
+<li><code>src/lib/components/dashboard/StocktakingControl.svelte</code> - UI component</li>
+<li><code>src/routes/api/system/stocktaking/**</code> - API endpoints</li>
+<li><code>drizzle/0003_add_system_config_table.sql</code> - Database schema</li>
+</ul>
+<h3 id="api-integration">API Integration</h3>
+<p>Add to protected endpoints:</p>
+<pre><code class="language-typescript">import { ensureStocktakingNotActive } from '$lib/server/system-config';
+
+// In your API handler:
+await ensureStocktakingNotActive('Operation description');
+</code></pre>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<p><strong>Q: Stocktaking won't start</strong>
+- Check user has Admin permissions
+- Verify database connectivity
+- Check server logs for errors</p>
+<p><strong>Q: Operations still blocked after ending stocktaking</strong>
+- Refresh admin panel status
+- Check database <code>system_config</code> table
+- Restart application if needed</p>
+<p><strong>Q: Status not updating in UI</strong>
+- Click "Refresh" button in admin panel
+- Check browser network requests
+- Verify API endpoint accessibility</p>
+<h3 id="database-queries">Database Queries</h3>
+<p>Check current configuration:</p>
+<pre><code class="language-sql">SELECT * FROM system_config;
+</code></pre>
+<p>Manually end stocktaking (emergency):</p>
+<pre><code class="language-sql">UPDATE system_config 
+SET config_value = 'false' 
+WHERE config_key = 'stocktaking_mode';
+</code></pre>
+<h2 id="future-enhancements">Future Enhancements</h2>
+<ul>
+<li><strong>Role-based Controls</strong>: Allow specific roles to manage stocktaking</li>
+<li><strong>Scheduled Stocktaking</strong>: Automatic start/end based on schedule</li>
+<li><strong>Notification System</strong>: Alert users when stocktaking begins/ends</li>
+<li><strong>Audit Reports</strong>: Detailed logs of all configuration changes</li>
+<li><strong>API Rate Limiting</strong>: Additional protection during high-load periods</li>
+</ul>
+<hr />
+<p><em>Last updated: 2024</em> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../Inventory_System/INVENTORY_SYSTEM/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Inventory System">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Inventory System
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../STOCKTAKING_WORKFLOW/" class="md-footer__link md-footer__link--next" aria-label="Next: Stocktaking Workflow - Admin &amp;amp; Warehouse Separation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Stocktaking Workflow - Admin &amp; Warehouse Separation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>
